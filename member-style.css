@@ -36,6 +36,8 @@ body {
 
 h1{
     margin-bottom: 24px;
+    padding: 12px;
+    border-bottom: #2b8a3e solid;
 }
 
 .head{
@@ -43,7 +45,7 @@ h1{
     align-items: center;
     gap: 24px;
     margin-bottom: 32px;
-    padding: 16px;
+    border-bottom: #2b8a3e solid;
 }
 
 img{
