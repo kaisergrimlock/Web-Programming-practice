@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index-style.css" />
     <title>Index</title>
 </head>
 <body>
-    <h1>Group One</h1>
-    <img src="group-logo.jpg" alt="group logo" width="100px" height="auto">
-
-    <h2>Group Description</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel esse fugiat accusamus veniam vitae. Nihil ipsa quasi tempore corporis autem? Repudiandae totam quas laudantium laborum quidem nulla in, rerum non.</p>
-
-    <h2>Members</h2>
-    <p>Here are the members of our group</p>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Skills</th>
-            <th>Student ID</th>
-        </tr>
-        <tr>
-            <td><a href="member1.html">Member 1</a></td>
-            <td>Java</td>
-            <td>s3234566</td>
-        </tr>
-        <tr>
-            <td><a href="member2.html">Member 2</a></td>
-            <td>PHP</td>
-            <td>s3273566</td>
-        </tr>
-        <tr>
-            <td><a href="member3.html">Member 3</a></td>
-            <td>C++</td>
-            <td>s2233466</td>
-        </tr>
-        <tr>
-            <td><a href="member4.html">Member 4</a></td>
-            <td>Java</td>
-            <td>s3674566</td>
-        </tr>
-    </table>
+    <div class="container">
+        <h1>Group One</h1>
+        <div class="head">
+            <svg xmlns="http://www.w3.org/2000/svg" class="group-logo" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            <div class="group-description">
+                <h2>Group Description</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel esse fugiat accusamus veniam vitae. Nihil ipsa quasi tempore corporis autem? Repudiandae totam quas laudantium laborum quidem nulla in, rerum non.</p>
+            </div>
+        </div>
+    
+        <div class="details">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Skills</th>
+                    <th>Student ID</th>
+                </thead>
+                <tr>
+                    <td><a href="member1.html">Member 1</a></td>
+                    <td>Java</td>
+                    <td>s3234566</td>
+                </tr>
+                <tr>
+                    <td><a href="member2.html">Member 2</a></td>
+                    <td>PHP</td>
+                    <td>s3273566</td>
+                </tr>
+                <tr>
+                    <td><a href="member3.html">Member 3</a></td>
+                    <td>C++</td>
+                    <td>s2233466</td>
+                </tr>
+                <tr>
+                    <td><a href="member4.html">Member 4</a></td>
+                    <td>Java</td>
+                    <td>s3674566</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
