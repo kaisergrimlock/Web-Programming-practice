@@ -97,12 +97,14 @@ li{
 
 nav{
     margin-bottom: 52px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn{
     border-radius: 1000px;
     font-size: 18px;
-    padding: 16px 32px;
+    padding: 16px 42px;
 }
 
 .btn:link,
