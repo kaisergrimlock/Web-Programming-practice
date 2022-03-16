@@ -53,26 +53,37 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-purpose{
+            margin-top: 10px;
         }
 
-        .contact-purpose-method{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 42px;
+        .contact-methods{
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        
+        .file-upload{
+            margin-bottom: 20px;
         }
 
-        .contact-block{
-            margin-bottom: 24px;
+        .text-area{
+            margin-bottom: 20px;
         }
 
         .buttons{
             margin-top: 32px;
             margin-bottom: 32px;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            gap: 50px;
+        }
+
+        .message-box{
+            height: 50px;
+            width: 200px;
         }
 
         .btn{
@@ -80,28 +91,11 @@
             font-size: 18px;
             padding: 16px 42px;
             }
-
-        .btn:link,
-        .btn:visited{
-            background-color: #2b8a3e;
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            display: inline-block
-        }
-
-        .btn:hover,
-        .btn:active{
-            background-color: #40c057;
-            color: white;
-        }
-
     </style>
 </head>
 <body>
     <div class="container">
-        <form>
+        <form method="post" action="contact.html" enctype="multipart/form-data">
             <div class="contact-info">
                 <h1>Contact Us</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" class="group-logo" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,28 +104,35 @@
     
                 <h2>Personal Contact Details</h2>
                 <div class="personal-info">
-                    <input type="text" class="name" autofocus placeholder="Name">
-                    <input type="email" class="email" autofocus placeholder="Email">
-                    <input type="number" class="phone" autocfocus placeholder="Phone Number">
-        
+                    <input type="text" class="name" placeholder="Name">
+                    <input type="email" class="email" placeholder="Email">
+                    <input type="number" class="phone" placeholder="Phone Number">
+                    <div class="contact-purpose">
+                        <label for="contact-purpose">Contact purpose:</label>
+                        <select name="contact_purpose" id="contact-purpose">
+                            <option value="bus">Business</option>
+                            <option value="per">Personal</option>
+                        </select>
+                    </div>
+
                 </div>
-    
-                <div class="contact-purppose-method">
-                    <div class="contact-block">
-                        <label for="contact-purpose">Contact Purpose:</label>
-                        <select name="contact-purpose" class="contact-purpose">
-                            <option value="personal">Personal</option>
-                            <option value="business">Business</option>
-                        </select>
-                    </div>
-    
-                    <div class="contact-block">
-                        <label for="contact-method">Contact Purpose:</label>
-                        <select name="contact-method" class="contact-method">
-                            <option value="email-contact">Email</option>
-                            <option value="phone-contact">Phone</option>
-                        </select>
-                    </div>
+
+                <div class="contact-methods">
+                    <h2>Perferred contact methods: </h2>
+                    <input type="radio" id="contact-phone" value="phone" name="preferred-contact">
+                    <label  for="contact-phone">Phone</label><br>
+                    <input type="radio" id="contact-email" value="email" name="perferred-contact">
+                    <label for="contact-email">Email</label><br>
+                </div>
+
+                <div class="file-upload">
+                    <h2>Upload File</h2>
+                    <input type="file" id="file-upload" name="file-name">
+                </div>
+
+                <div class="text-area">
+                    <h2>Message</h2>
+                    <textarea id="text-box" name="message" rows="4" cols="10" class="message-box"></textarea>
                 </div>
             </div>
     
@@ -153,8 +154,8 @@
                 <label for="wednesday"> Sunday</label><br>
             </div>
             <div class="buttons">
-                <a href="#" class="btn">Clear</a>
-                <a href="#" class="btn">Send</a>
+                <input type="reset" value="Reset" name="reset" class="btn">
+                <input type="submit" value="Submit" name="submit" class="btn">
             </div>
         </form>
     </div>
